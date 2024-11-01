@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underwriter Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Underwriter Registration</h2>
+  <form id="registerForm">
+    <label for="underwriterId">ID</label>
+    <input type="text" id="underwriterId" disabled>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required>
+
+    <label for="joiningDate">Joining Date</label>
+    <input type="date" id="joiningDate" required>
+
+    <label for="password">Default Password</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Search Underwriter</h2>
+  <form id="searchForm">
+    <label for="underwriterId">Underwriter ID</label>
+    <input type="text" id="underwriterId" required>
+    <button type="submit">Search</button>
+  </form>
+  <div id="underwriterDetails"></div>
+</div>
+
+<div class="container">
+  <h2>Update Underwriter Password</h2>
+  <form id="updatePasswordForm">
+    <label for="underwriterId">Underwriter ID</label>
+    <input type="text" id="underwriterId" required>
+
+    <label for="newPassword">New Password</label>
+    <input type="password" id="newPassword" required>
+
+    <button type="submit">Update Password</button>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Delete Underwriter</h2>
+  <form id="deleteForm">
+    <label for="underwriterId">Underwriter ID</label>
+    <input type="text" id="underwriterId" required>
+    <button type="submit">Delete</button>
+  </form>
+</div>
+
+<div class="container">
+  <h2>View All Underwriters</h2>
+  <table id="underwritersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Joining Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be populated by JavaScript -->
+    </tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
